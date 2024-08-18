@@ -3,8 +3,9 @@
 Este projeto consiste em uma Single Page Application (SPA) para a criação da HomePage de um e-commerce. O objetivo é desenvolver uma interface moderna e responsiva, baseada em um template do Figma, com menus dinâmicos e funcionalidade de newsletter com validação de e-mail.
 
 ## 💻 Stacks Utilizadas
-![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) 
-![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white) 
+
+![HTML](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
 ## 🚀 Funcionalidades
@@ -23,23 +24,25 @@ Este projeto consiste em uma Single Page Application (SPA) para a criação da H
 │   └── index.html
 │
 ├── /src
+|   |
+|   ├── /assets
+|   |
 │   ├── /components
 │   │   ├── Navbar.js
-│   │   ├── ProductList.js
-│   │   ├── Comments.js
-│   │   └── Cart.js
-│   │
-│   ├── /styles
-│   │   └── main.css
-│   │
-│   ├── /assets
-│   │   └── logo.png
+│   │   └── Footer.js
 │   │
 │   ├── /pages
-│   │   ├── Home.js
+│   │   └── Home.js
+|   |
+│   ├── /styles
+│   │   ├── reset.css
+│   │   └── main.css
 │   │
-│   └── app.js
-│
+│   │
+│   │
+|   |── app.js
+│   └── router.js
+|
 └── package.json
 ```
 
@@ -63,12 +66,15 @@ Este projeto consiste em uma Single Page Application (SPA) para a criação da H
 3. **Inicie o servidor**
 
    ```bash
-   npm start
+   parcel public/index.html
    ```
 
 ## 🎨 Template do Figma
 
 Este projeto foi baseado no seguinte template do Figma:
 
-[E-commerce Website Template (Freebie)](https://www.figma.com/design/BHuP6qu125RIatRXw4ChMD/E-commerceWebsite-Template-(Freebie)-(Community)?node-id=20-2&t=Mp7UqOWH9iP0XPxa-0)
+[E-commerce Website Template (Freebie)](<https://www.figma.com/design/BHuP6qu125RIatRXw4ChMD/E-commerceWebsite-Template-(Freebie)-(Community)?node-id=20-2&t=Mp7UqOWH9iP0XPxa-0>)
+
+```
+
 ```
