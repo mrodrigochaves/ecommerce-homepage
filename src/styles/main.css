@@ -1,0 +1,39 @@
+.top-bar {
+  position: fixed;
+  width: 100%;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 10px 12%;
+  background-color: #000;
+  color: #fff;
+  z-index: 100;
+}
+
+.top-bar a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.nav-bar {
+  position: fixed;
+  top: 32px;
+  width: 100%;
+  background-color: #fff;
+  color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+}
+
+.nav-menu {
+  display: none;
+}
+.icons {
+  padding-right: 40px;
+}
+
+.icon {
+  padding: 5px;
+}
