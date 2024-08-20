@@ -15,7 +15,7 @@ export default function Navbar() {
       <div class="hamburger" onclick="toggleMenu()">☰</div>
       <div class="logo">SHOP.CO</div>
       <div class="icons">
-        <img class="icon" src="${searchIcon}" alt="Search" />
+        <img class="icon" id="search" src="${searchIcon}" alt="Search" />
         <img class="icon" src="${cartIcon}" alt="Cart" />
         <img class="icon" src="${accountIcon}" alt="Account" />
       </div>

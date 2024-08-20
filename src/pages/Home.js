@@ -23,43 +23,45 @@ import emailIcon from "../assets/email.svg";
 export default function Home() {
   return `
     <!-- Hero Section -->
-    <section class="hero-section">
-      <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
-      <p>
-        Browse through our diverse range of meticulously crafted garments,
-        designed to bring out your individuality and cater to your sense of
-        style.
-      </p>
-      <button class="shop-now-btn">Shop Now</button>
-      <div class="highlights">
-        <div class="highlight-row">
-          <div class="highlight-item">
-            <h2>200+</h2>
-            <p>Intenational Brands</p>
-          </div>
-          <div class="vertical-line"></div>
-          <div class="highlight-item">
-            <h2>2,000+</h2>
-            <p>High-Quality Products</p>
-          </div>
+<section class="hero-section">
+  <div class="content">
+    <h1>FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+    <p>
+      Browse through our diverse range of meticulously crafted garments,
+      designed to bring out your individuality and cater to your sense of
+      style.
+    </p>
+    <button class="shop-now-btn">Shop Now</button>
+    <div class="highlights">
+      <div class="highlight-row">
+        <div class="highlight-item">
+          <h2>200+</h2>
+          <p>International Brands</p>
         </div>
-        <div class="highlight-row-2">
-          <div class="highlight-item">
-            <h2>30,000+</h2>
-            <p>Happy Customers</p>
-          </div>
+        <div class="vertical-line"></div>
+        <div class="highlight-item">
+          <h2>2,000+</h2>
+          <p>High-Quality Products</p>
         </div>
       </div>
-    </section>
+      <div class="highlight-row-2">
+        <div class="highlight-item">
+          <h2>30,000+</h2>
+          <p>Happy Customers</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- Featured Image -->
-    <section class="image-section">
-      <img src="${trendyImage}" alt="Couple wearing trendy clothes" class="featured-image" />
-      <img src="${starIcon}" alt="Star 70" class="star-biggest" />
-      <img src="${starIcon}" alt="Star 44" class="star-smallest" />
-    </section>
+  <!-- Featured Image -->
+  <section class="image-section">
+    <img src="${trendyImage}" alt="Couple wearing trendy clothes" class="featured-image" />
+    <img src="${starIcon}" alt="Star 70" class="star-biggest" />
+    <img src="${starIcon}" alt="Star 44" class="star-smallest" />
+  </section>
+</section>
 
-    <!-- Brand Logos -->
+<!-- Brand Logos -->
     <section class="section-logos">
       <div class="brand-logos">
         <img src="${versaceLogo}" alt="Versace" />
@@ -87,6 +89,30 @@ export default function Home() {
           </div>
           <div>$120</div>
         </div>
+        <div class="product-card">
+          <img src="${tshirtPreview}" alt="T-shirt" />
+          <div>T-shirt with Tape Details</div>
+          <div class="rating">
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star-half" style="color: #FFD700;"></i>
+          </div>
+          <div>$120</div>
+        </div>
+        <div class="product-card">
+          <img src="${skinPreview}" alt="Skin" />
+          <div>Skin Fit Jeans</div>
+          <div class="rating">
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star-half" style="color: #FFD700;"></i>
+          </div>
+          <div>$240 <span class="old-price">$260</span></div>
+        </div>
+
         <div class="product-card">
           <img src="${skinPreview}" alt="Skin" />
           <div>Skin Fit Jeans</div>
@@ -120,7 +146,29 @@ export default function Home() {
             <i class="fas fa-star" style="color: #FFD700;"></i>
           </div>
         </div>
-
+        <div class="product-card">
+          <img src="${verticalPreview}" alt="Vertical Striped Shirt" />
+          <div>Vertical Striped Shirt</div>
+          <div>$212 <span class="old-price">$235</span></div>
+          <div>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+          </div>
+        </div>
+        <div class="product-card">
+          <img src="${couragePreview}" alt="Courage Graphic T-shirt" />
+          <div>Courage Graphic T-shirt</div>
+          <div>$145</div>
+          <div>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+            <i class="fas fa-star" style="color: #FFD700;"></i>
+          </div>
+        </div>
         <div class="product-card">
           <img src="${couragePreview}" alt="Courage Graphic T-shirt" />
           <div>Courage Graphic T-shirt</div>
@@ -140,6 +188,8 @@ export default function Home() {
     <!-- Browse by Dress Style -->
     <div class="container">
       <div class="header">BROWSE BY DRESS STYLE</div>
+
+       <div class="category-wrapper">
       <div class="category">
         <div class="category-title">Casual</div>
         <img src="${casualPreview}" alt="Casual" class="category-image">
@@ -159,18 +209,18 @@ export default function Home() {
     </div>
 
     <!-- Testimonials Section -->
-    <section class="carousel">
+    <section>
       <div class="carousel" aria-label="Testimonial Carousel">
-        <div class="carousel-header">
+       <div class="carousel-header">
           <h2 class="carousel-title">Our Happy Customers</h2>
           <div class="carousel-nav">
             <img id="prevBtn" class="nav-arrow" aria-label="Previous" src="${prevArrow}" alt="Previous">
             <img id="nextBtn" class="nav-arrow" aria-label="Next" src="${nextArrow}" alt="Next">
           </div>
         </div>
-        <div class="carousel-content">
-          <!-- Testimonial Items -->
-          <div class="carousel-item" aria-label="Testimonial 1">
+      </div>
+      <div class="carousel-content">
+      <div class="carousel-item" aria-label="Testimonial 1">
             <div class="testimonial-box">
               <div>
                 <i class="fas fa-star" style="color: #FFD700;"></i>
@@ -186,7 +236,36 @@ export default function Home() {
               <p class="testimonial-text">"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”</p>
             </div>
           </div>
-          <!-- Add more testimonials here -->
+          <div id="testimonial-2" class="carousel-item" aria-label="Testimonial 2">
+                <div class="testimonial-box">
+                  <div><i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                  </div>
+                    <div class="person-info">
+                        <span class="person-name">Alex K.</span>
+                        <span class="check-icon" aria-hidden="true">✓</span>
+                    </div>
+                    <p class="testimonial-text">"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.”</p>
+                </div>
+            </div>
+            <div id="testimonial-3" class="carousel-item" aria-label="Testimonial 3">
+                <div class="testimonial-box">
+                  <div><i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                    <i class="fas fa-star" style="color: #FFD700;"></i>
+                  </div>
+                    <div class="person-info">
+                        <span class="person-name">James L.</span>
+                        <span class="check-icon" aria-hidden="true">✓</span>
+                    </div>
+                    <p class="testimonial-text">"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.”</p>
+                </div>
+            </div>
         </div>
       </div>
     </section>

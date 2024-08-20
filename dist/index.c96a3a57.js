@@ -1,0 +1,2 @@
+const e=document.querySelector(".carousel-content"),t=document.querySelectorAll(".carousel-item"),n=document.getElementById("prevBtn"),c=document.getElementById("nextBtn");let l=0;function o(t){e.style.transform=`translateX(-${100*t}%)`}function r(){o(l=(l+1)%t.length)}c.addEventListener("click",r),n.addEventListener("click",function(){o(l=(l-1+t.length)%t.length)}),setInterval(r,5e3);
+//# sourceMappingURL=index.c96a3a57.js.map
